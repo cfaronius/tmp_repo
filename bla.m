@@ -14,7 +14,7 @@ for i=1:nPackets
     crc = crc24(crcInit, data);
     data = [data crc];
     data = whitening( channelIndex, data);
-    
+    data = 2*data-1;
  
     
 end
