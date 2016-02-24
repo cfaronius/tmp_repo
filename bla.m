@@ -1,4 +1,4 @@
-%ble.m
+%bla.m
 
 nPackets = 100;
 packetLength = 10*8;
