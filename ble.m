@@ -11,8 +11,8 @@ header = build_header(accessAdress);
 
 for i=1:nPackets
     data = randn(1,packetLength)>0;   
-    crc24(crcInit, data);
-    data = [data str];
+    crc = crc24(crcInit, data);
+    data = [data crc];
     data = whitening( channelIndex, data);
     
  
